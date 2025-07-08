@@ -57,6 +57,6 @@ app.post('/register', async (req, res) => { //the logic for the /register page
   res.redirect('/login'); //then redirects the user back to the login page
 });
 
-app.listen(3000, () => {
+app.listen(3000, () => { //common practice app.listen expects a number in parantheses to state the port
   console.log('Vulnerable app running at http://localhost:3000');
 }); //this runs the app on localhost and port 3000 then logs it to the console
